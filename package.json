@@ -1,0 +1,23 @@
+{
+  "name": "corporate-dashboard",
+  "version": "1.0.0",
+  "description": "A Corporate Dashboard for HR's to search for candidates with the required technical skills",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naved1234/Corporate-Dashboard.git"
+  },
+  "keywords": [
+    "MEAN",
+    "stack"
+  ],
+  "author": "Naved Ahmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naved1234/Corporate-Dashboard/issues"
+  },
+  "homepage": "https://github.com/naved1234/Corporate-Dashboard#readme"
+}
