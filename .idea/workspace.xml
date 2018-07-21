@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/dashboard/components/side-nav/side-nav.component.html" afterPath="$PROJECT_DIR$/material-prod/src/app/dashboard/components/side-nav/side-nav.component.html" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/dashboard/components/side-nav/side-nav.component.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/dashboard/components/side-nav/side-nav.component.ts" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard-routing.module.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard-routing.module.ts" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard.module.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard.module.ts" />
-    </list>
+    <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -52,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="students.module.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="students.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/students.module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
@@ -60,6 +54,16 @@
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="students-listing.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,6 +127,7 @@
         <option value="$PROJECT_DIR$/material-prod/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard.module.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/students/students.module.ts" />
+        <option value="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html" />
       </list>
     </option>
   </component>
@@ -284,12 +289,12 @@
       <workItem from="1532093322394" duration="27000" />
       <workItem from="1532094511913" duration="11652000" />
       <workItem from="1532111339913" duration="10000" />
-      <workItem from="1532111368337" duration="35811000" />
+      <workItem from="1532111368337" duration="35943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49534000" />
+    <option name="totallyTimeSpent" value="49666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="16" width="1301" height="772" extended-state="6" />
@@ -326,13 +331,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ng-bootcamp/src/environments/environment.prod.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -737,6 +735,14 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
