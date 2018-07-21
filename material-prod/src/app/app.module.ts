@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {MatButtonModule} from "@angular/material";
+import {MaterialModule} from "./shared/material.module";
 
 
 @NgModule({
@@ -14,7 +14,7 @@ import {MatButtonModule} from "@angular/material";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
