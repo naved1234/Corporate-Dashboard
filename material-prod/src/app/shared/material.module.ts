@@ -9,7 +9,7 @@ import {MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatTool
     MatIconModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
   ],
   exports: [
     MatButtonModule,
