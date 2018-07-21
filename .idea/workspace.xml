@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="" />
+    <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/material-prod/.angular-cli.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/.editorconfig" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/e2e/app.e2e-spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/e2e/app.po.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/e2e/tsconfig.e2e.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/karma.conf.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/package-lock.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/protractor.conf.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/app/app.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/app/app.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/app/app.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/app/app.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/app/app.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/assets/.gitkeep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/environments/environment.prod.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/environments/environment.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/main.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/polyfills.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/styles.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/test.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/tsconfig.app.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/tsconfig.spec.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/typings.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/tsconfig.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/tslint.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/yarn.lock" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,30 +45,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material-prod/src/app/app.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/material-prod/src/app/app.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -83,7 +92,6 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/material-prod/node_modules" />
     <handled-path value="$PROJECT_DIR$/ng-bootcamp/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -114,24 +122,6 @@
             <path>
               <item name="Corporate-Dashboard" type="b2602c69:ProjectViewProjectNode" />
               <item name="Corporate-Dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Corporate-Dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Corporate-Dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="material-prod" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Corporate-Dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Corporate-Dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="material-prod" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Corporate-Dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Corporate-Dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="material-prod" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -175,19 +165,18 @@
       <workItem from="1532093322394" duration="27000" />
       <workItem from="1532094511913" duration="11652000" />
       <workItem from="1532111339913" duration="10000" />
-      <workItem from="1532111368337" duration="13195000" />
+      <workItem from="1532111368337" duration="13370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26918000" />
+    <option name="totallyTimeSpent" value="27093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="16" width="1301" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -547,9 +536,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
