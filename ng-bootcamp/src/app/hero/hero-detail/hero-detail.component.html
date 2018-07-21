@@ -1,0 +1,6 @@
+<p> hero Id {{hero.id}}</p>
+<p> {{hero.name | uppercase}} </p>
+<p> {{hero.salary | currency}} </p>
+<p> {{hero.rating | number}} </p>
+<p> {{hero.joinDate | date:'shortDate'}} </p>
+<button class="btn btn-primary" (click)="deleteHero()">Delete</button>
