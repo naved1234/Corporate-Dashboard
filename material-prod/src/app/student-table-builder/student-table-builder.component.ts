@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-student-table-build',
+  selector: 'app-student-table-builder',
   template: `
     <p>
-      student-table-build works!
+      student-table-builder works!
     </p>
   `,
   styles: []
 })
-export class StudentTableBuildComponent implements OnInit {
+export class StudentTableBuilderComponent implements OnInit {
 
   constructor() { }
 
