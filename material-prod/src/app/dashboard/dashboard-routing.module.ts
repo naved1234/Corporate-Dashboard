@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {StudentTableBuilderComponent} from "./student-table-builder.component";
 import {MainContentComponent} from "./components/main-content/main-content.component";
+import {DashboardComponent} from "./dashboard.component";
 
 const routes: Routes = [
   {
     path: '',
-    component: StudentTableBuilderComponent,
+    component: DashboardComponent,
     children: [
       {
         path: '',
@@ -20,4 +20,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class StudentTableBuilderRoutingModule { }
+export class DashboardRoutingModule { }

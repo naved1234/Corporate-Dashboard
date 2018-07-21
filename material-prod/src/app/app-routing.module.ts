@@ -4,12 +4,12 @@ import {AppComponent} from "./app.component";
 
 const routes: Routes = [
   {
-    path: 'student-table-builder',
-    loadChildren: 'app/student-table-builder/student-table-builder.module#StudentTableBuilderModule'
+    path: 'dashboard',
+    loadChildren: 'app/dashboard/dashboard.module#DashboardModule'
   },
   {
     path: '**',
-    redirectTo: ''
+    redirectTo: 'dashboard'
   }
 ];
 
