@@ -7,13 +7,15 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import {MaterialModule} from "../shared/material.module";
 import {DashboardRoutingModule} from "./dashboard-routing.module";
 import {DashboardComponent} from "./dashboard.component";
+import {StudentsModule} from "../students/students.module";
 
 
 @NgModule({
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    MaterialModule
+    MaterialModule,
+    StudentsModule
   ],
   declarations: [DashboardComponent, MainContentComponent, SideNavComponent, ToolbarComponent]
 })

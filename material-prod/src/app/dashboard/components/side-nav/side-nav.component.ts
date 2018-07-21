@@ -9,6 +9,10 @@ export class SideNavComponent implements OnInit {
 
   private mediaMatcher:MediaQueryList =
     matchMedia(`(max-width : ${MAX_WIDTH_BREAKPOINT}px)`)
+  links = [ {
+    name: 'Students',
+    url: 'students'
+  }];
   constructor(zone: NgZone) {
     this.mediaMatcher.addListener((mql) => {
       zone.run(() => this.mediaMatcher = mql)
