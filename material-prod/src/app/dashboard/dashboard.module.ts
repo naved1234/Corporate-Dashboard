@@ -8,7 +8,6 @@ import {MaterialModule} from "../shared/material.module";
 import {DashboardRoutingModule} from "./dashboard-routing.module";
 import {DashboardComponent} from "./dashboard.component";
 import {StudentsModule} from "../students/students.module";
-import {TodoModule} from "../todo/todo.module";
 
 
 @NgModule({
