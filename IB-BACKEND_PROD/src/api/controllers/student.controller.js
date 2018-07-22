@@ -25,44 +25,40 @@ export default {
   },
   findOne(req, res) {
     const { id } = req.params;
-    Invoice.findById(id)
-      .then(invoice => {
-      if (!invoice) {
-      return res.status(HttpStatus.NOT_FOUND).json({ err: 'Could not find any invoice' });
+    Student.findById(id)
+      .then(student => {
+      if (!student) {
+      return res.status(HttpStatus.NOT_FOUND).json({ err: 'Could not find any student' });
     }
-    return res.json(invoice);
+    return res.json(student);
   })
   .catch(err => res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(err));
   },
   delete(req, res) {
     const { id } = req.params;
-    Invoice.findByIdAndRemove(id)
-      .then(invoice => {
-      if (!invoice) {
-      return res.status(HttpStatus.NOT_FOUND).json({ err: 'Could not delete any invoice' });
+    Student.findByIdAndRemove(id)
+      .then(student => {
+      if (!student) {
+      return res.status(HttpStatus.NOT_FOUND).json({ err: 'Could not delete any student' });
     }
-    return res.json(invoice);
+    return res.json(student);
   })
   .catch(err => res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(err));
   },
   update(req, res) {
     const { id } = req.params;
     const schema = Joi.object().keys({
-      item: Joi.string().optional(),
-      date: Joi.date().optional(),
-      due: Joi.date().optional(),
-      qty: Joi.number()
-        .integer()
-        .optional(),
-      tax: Joi.number().optional(),
-      rate: Joi.number().optional(),
+      name: Joi.string().required(),
+      technology: Joi.string().required(),
+      experience: Joi.string().optional(),
+      phone: Joi.string().required(),
     });
     const { error, value } = Joi.validate(req.body, schema);
     if (error && error.details) {
       return res.status(HttpStatus.BAD_REQUEST).json(error);
     }
-    Invoice.findOneAndUpdate({ _id: id }, value, { new: true })
-      .then(invoice => res.json(invoice))
-  .catch(err => res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(err));
+    Student.findOneAndUpdate({ _id: id }, value, { new: true })
+      .then(student => res.json(student))
+      .catch(err => res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(err));
   },
 };
