@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/dashboard/components/side-nav/side-nav.component.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/dashboard/components/side-nav/side-nav.component.ts" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard-routing.module.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard-routing.module.ts" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard.module.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard.module.ts" />
-    </list>
+    <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -32,8 +27,8 @@
       <file leaf-file-name="dashboard.module.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="252">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -324,12 +319,12 @@
       <workItem from="1532093322394" duration="27000" />
       <workItem from="1532094511913" duration="11652000" />
       <workItem from="1532111339913" duration="10000" />
-      <workItem from="1532111368337" duration="38350000" />
+      <workItem from="1532111368337" duration="38595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52073000" />
+    <option name="totallyTimeSpent" value="52318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="16" width="1301" height="772" extended-state="6" />
@@ -780,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state relative-caret-position="252">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
