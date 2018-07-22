@@ -4,12 +4,29 @@ import mongoose from 'mongoose';
 import { router } from './config/routes';
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/student-builder', { useNewUrlParser: true });
+mongoose.connect('mongodb://localhost:27017/studentBuilder', { useNewUrlParser: true },
+  () => console.log('Connected to mongo...'));
 
 const app = express();
 const PORT = 3000;
 
-// app.use('/api', router);
+app.use('/api', router);
+
+app.use((req, res, next) => {
+  const error = new Error('Not found');
+  error.message = 'Invalid route';
+  error.status = 404;
+  next(error);
+});
+
+app.use((error, req, res, next) => {
+  res.status(error.status || 500);
+  return res.json({
+    error: {
+      message: error.message,
+    },
+  });
+});
 
 app.get('/', (req, res) => {
   res.json({
