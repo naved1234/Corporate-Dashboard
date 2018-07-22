@@ -1,7 +1,15 @@
 import express from 'express';
+import mongoose from 'mongoose';
+
+import { router } from './config/routes';
+
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost:27017/student-builder', { useNewUrlParser: true });
 
 const app = express();
 const PORT = 3000;
+
+// app.use('/api', router);
 
 app.get('/', (req, res) => {
   res.json({
