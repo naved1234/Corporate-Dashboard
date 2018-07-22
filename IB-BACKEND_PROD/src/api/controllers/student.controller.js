@@ -13,7 +13,7 @@ export default {
       name: Joi.string().required(),
       technology: Joi.string().required(),
       experience: Joi.string().optional(),
-      phone: Joi.number().required(),
+      phone: Joi.string().required(),
     });
     const { error, value } = Joi.validate(req.body, schema);
     if (error && error.details) {
