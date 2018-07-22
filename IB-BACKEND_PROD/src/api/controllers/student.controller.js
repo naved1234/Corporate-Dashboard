@@ -6,7 +6,7 @@ export default {
   findAll(req, res, next) {
     Student.find()
       .then(students => res.json(students))
-  .catch(err => res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(err));
+      .catch(err => res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(err));
   },
   create(req, res, next) {
     const schema = Joi.object().keys({
