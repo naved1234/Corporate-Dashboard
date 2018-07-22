@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/IB-BACKEND_PROD/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -186,12 +183,12 @@
       <workItem from="1532093322394" duration="27000" />
       <workItem from="1532094511913" duration="11652000" />
       <workItem from="1532111339913" duration="10000" />
-      <workItem from="1532111368337" duration="38900000" />
+      <workItem from="1532111368337" duration="38939000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52623000" />
+    <option name="totallyTimeSpent" value="52662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="16" width="1301" height="772" extended-state="6" />
