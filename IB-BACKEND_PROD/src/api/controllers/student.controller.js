@@ -48,10 +48,10 @@ export default {
   update(req, res) {
     const { id } = req.params;
     const schema = Joi.object().keys({
-      name: Joi.string().required(),
-      technology: Joi.string().required(),
+      name: Joi.string().optional(),
+      technology: Joi.string().optional(),
       experience: Joi.string().optional(),
-      phone: Joi.string().required(),
+      phone: Joi.string().optional(),
     });
     const { error, value } = Joi.validate(req.body, schema);
     if (error && error.details) {
