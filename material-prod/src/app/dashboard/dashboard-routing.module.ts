@@ -17,10 +17,6 @@ const routes: Routes = [
       {
         path: 'students',
         component: StudentsListingComponent
-      },
-      {
-        path: 'todo',
-        component: TodoListingComponent
       }
     ]
   }

@@ -16,8 +16,7 @@ import {TodoModule} from "../todo/todo.module";
     CommonModule,
     DashboardRoutingModule,
     MaterialModule,
-    StudentsModule,
-    TodoModule
+    StudentsModule
   ],
   declarations: [DashboardComponent, MainContentComponent, SideNavComponent, ToolbarComponent]
 })
