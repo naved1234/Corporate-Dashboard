@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import logger from 'morgan';
+import cors from 'cors';
 
 import { router } from './config/routes';
 
@@ -13,6 +14,7 @@ const PORT = 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 app.use(logger('dev'));
 app.use('/api', router);
 
