@@ -69,6 +69,7 @@ export class StudentsListingComponent implements OnInit, AfterViewInit {
       .sortChange
       .flatMap(() => {
         this.isResultsLoading = true;
+        this.paginator.pageIndex = 0;
         return this.studentService.getStudents({page: this.paginator.pageIndex, perPage: this.paginator.pageSize, sortField: this.sort.active, sortDir: this.sort.direction});
       })
       .subscribe(data => {

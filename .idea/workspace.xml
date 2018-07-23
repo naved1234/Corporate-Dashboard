@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/shared/material.module.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/shared/material.module.ts" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html" afterPath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html" />
       <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,8 +41,8 @@
       <file leaf-file-name="students-listing.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144">
-              <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+            <state relative-caret-position="252">
+              <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
               </folding>
@@ -139,8 +136,8 @@
         <option value="$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/shared/material.module.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html" />
-        <option value="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts" />
+        <option value="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" />
       </list>
     </option>
   </component>
@@ -362,7 +359,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121042000" />
+    <option name="totallyTimeSpent" value="121382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="16" width="1301" height="772" extended-state="6" />
@@ -747,8 +744,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+        <state relative-caret-position="252">
+          <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
           <folding>
             <element signature="e#0#74#0" expanded="true" />
           </folding>
