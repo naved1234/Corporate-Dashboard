@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {StudentService} from "../../services/student.service";
+import {Student} from "../../models/student";
 
 @Component({
   selector: 'app-students-listing',
@@ -9,11 +10,13 @@ import {StudentService} from "../../services/student.service";
 export class StudentsListingComponent implements OnInit {
 
   constructor(private studentService: StudentService) { }
+  displayedColumns: string[] = ['name', 'technology', 'experience', 'phone'];
+  dataSource: Student[] = [];
 
   ngOnInit() {
     this.studentService.getStudents().subscribe(
       data => {
-        console.log(data);
+        this.dataSource = data;
       },
       err => {
         console.log(err);
@@ -22,3 +25,4 @@ export class StudentsListingComponent implements OnInit {
   }
 
 }
+

@@ -1,3 +1,28 @@
-<mat-card>
-  <h1>Student Listing!</h1>
-</mat-card>
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <!-- Position Column -->
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+    <mat-cell *matCellDef="let student"> {{student.name}} </mat-cell>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="technology">
+    <mat-header-cell *matHeaderCellDef> Technology </mat-header-cell>
+    <mat-cell *matCellDef="let student"> {{student.technology}} </mat-cell>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="experience">
+    <mat-header-cell *matHeaderCellDef> Experience </mat-header-cell>
+    <mat-cell *matCellDef="let student"> {{student.experience}} </mat-cell>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="phone">
+    <mat-header-cell *matHeaderCellDef> Contact </mat-header-cell>
+    <mat-cell *matCellDef="let student"> {{student.phone}} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
