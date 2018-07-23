@@ -5,6 +5,7 @@ import {MaterialModule} from "../shared/material.module";
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {StudentService} from "./services/student.service";
+import { StudentFormComponent } from './components/student-form/student-form.component';
 
 @NgModule({
   imports: [
@@ -13,8 +14,8 @@ import {StudentService} from "./services/student.service";
     FormsModule,
     HttpClientModule
   ],
-  declarations: [StudentsListingComponent],
-  exports: [StudentsListingComponent],
+  declarations: [StudentsListingComponent, StudentFormComponent],
+  exports: [StudentsListingComponent, StudentFormComponent],
   providers: [StudentService]
 })
 export class StudentsModule { }

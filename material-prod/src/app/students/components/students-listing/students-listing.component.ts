@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {StudentService} from "../../services/student.service";
 import {Student} from "../../models/student";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-students-listing',
@@ -9,9 +10,14 @@ import {Student} from "../../models/student";
 })
 export class StudentsListingComponent implements OnInit {
 
-  constructor(private studentService: StudentService) { }
+  constructor(private studentService: StudentService,
+              private router: Router) { }
   displayedColumns: string[] = ['name', 'technology', 'experience', 'phone', 'action'];
   dataSource: Student[] = [];
+
+  saveBtnHandler() {
+    this.router.navigate(['dashboard', 'students', 'new']);
+  }
 
   ngOnInit() {
     this.studentService.getStudents().subscribe(
