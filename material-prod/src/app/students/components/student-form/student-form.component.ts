@@ -33,6 +33,7 @@ export class StudentFormComponent implements OnInit {
           this.snackBar.open('Student updated', 'Success', {
             duration: 2000
           });
+          this.router.navigate(['dashboard', 'students']);
         }, err => this.errorHandler(err, 'Failed to update student'));
     } else {
       this.studentService.createStudent(this.studentForm.value)
