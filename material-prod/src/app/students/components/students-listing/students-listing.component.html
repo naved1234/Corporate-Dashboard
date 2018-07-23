@@ -1,3 +1,11 @@
+<mat-toolbar>
+  <h3>Students</h3>
+  <div class="menu-bar">
+    <button mat-button>
+      New Student
+    </button>
+  </div>
+</mat-toolbar>
 <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <!-- Position Column -->
   <ng-container matColumnDef="name">
@@ -21,6 +29,25 @@
   <ng-container matColumnDef="phone">
     <mat-header-cell *matHeaderCellDef> Contact </mat-header-cell>
     <mat-cell *matCellDef="let student"> {{student.phone}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="action">
+    <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
+    <mat-cell *matCellDef="let student">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>edit</mat-icon>
+        <span>Edit</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>delete</mat-icon>
+        <span>Delete</span>
+      </button>
+    </mat-menu>
+    </mat-cell>
   </ng-container>
 
   <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

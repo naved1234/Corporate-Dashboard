@@ -4,6 +4,7 @@ import {MainContentComponent} from "./components/main-content/main-content.compo
 import {DashboardComponent} from "./dashboard.component";
 import {StudentsListingComponent} from "../students/components/students-listing/students-listing.component";
 
+
 const routes: Routes = [
   {
     path: '',

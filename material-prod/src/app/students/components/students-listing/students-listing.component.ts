@@ -10,7 +10,7 @@ import {Student} from "../../models/student";
 export class StudentsListingComponent implements OnInit {
 
   constructor(private studentService: StudentService) { }
-  displayedColumns: string[] = ['name', 'technology', 'experience', 'phone'];
+  displayedColumns: string[] = ['name', 'technology', 'experience', 'phone', 'action'];
   dataSource: Student[] = [];
 
   ngOnInit() {
