@@ -4,6 +4,7 @@ import {Student} from "../../models/student";
 import {Router} from "@angular/router";
 import {MatPaginator, MatSnackBar} from "@angular/material";
 import {remove} from "lodash";
+import 'rxjs/Rx';
 
 @Component({
   selector: 'app-students-listing',
@@ -45,13 +46,12 @@ export class StudentsListingComponent implements OnInit {
   ngOnInit() {
     this.paginator
       .page
+      .flatMap(data => {
+        return this.studentService.getStudents({page: ++data.pageIndex, perPage: data.pageSize});
+      })
       .subscribe(data => {
-        this.studentService.getStudents({page: ++data.pageIndex, perPage: data.pageSize})
-          .subscribe(data => {
-            console.log(data);
-            this.dataSource = data.docs;
-            this.resultsLength = data.total;
-          }, err => this.errorHandler(err, 'Failed to fetch students with pagination'));
+        this.dataSource = data.docs;
+        this.resultsLength = data.total;
       }, err => this.errorHandler(err, 'Failed to fetch students with pagination'));
     this.populateStudents();
   }
