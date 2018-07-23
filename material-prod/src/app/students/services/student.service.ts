@@ -11,7 +11,7 @@ export class StudentService {
   constructor(private httpClient: HttpClient) { }
 
   getStudents({page, perPage}): Observable<StudentPaginationRsp[]> {
-    return this.httpClient.get<StudentPaginationRsp[]>(`${BASE_URL}/students?page=${page}&perPage=${perPage}`);
+    return this.httpClient.get<StudentPaginationRsp[]>(`${BASE_URL}/students?page=${page + 1}&perPage=${perPage}`);
   }
   createStudent(body: Student): Observable<Student> {
     return this.httpClient.post<Student>(`${BASE_URL}/students`, body);

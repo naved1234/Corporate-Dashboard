@@ -4,15 +4,20 @@ import Student from '../models/student.model';
 
 export default {
   findAll(req, res, next) {
-    const {page = 1, perPage = 10, filter} = req.query;
+    const {page = 1, perPage = 10, filter, sortField, sortDir} = req.query;
     const options = {
       page: parseInt(page, 10),
-      limit: parseInt(perPage, 10)
+      limit: parseInt(perPage, 10),
     };
     const query = {};
     if (filter) {
       query.technology = {
-        $regex: filter,
+        $regex: filter
+      };
+    }
+    if (sortField && sortDir) {
+      options.sort = {
+        [sortField]: sortDir
       };
     }
     Student.paginate(query, options)

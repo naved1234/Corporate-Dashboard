@@ -51,7 +51,7 @@ export class StudentFormComponent implements OnInit {
     this.route.params
       .subscribe(params => {
         let id = params['id'];
-        if (!id) return;
+        if (id == 'new') return;
         this.studentService.getStudent(id)
           .subscribe(data => {
             this.student = data;

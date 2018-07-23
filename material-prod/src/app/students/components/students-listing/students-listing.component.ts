@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit, ViewChild, AfterViewInit} from '@angular/core';
 import {StudentService} from "../../services/student.service";
 import {Student} from "../../models/student";
 import {Router} from "@angular/router";
@@ -11,7 +11,7 @@ import 'rxjs/Rx';
   templateUrl: './students-listing.component.html',
   styleUrls: ['./students-listing.component.scss']
 })
-export class StudentsListingComponent implements OnInit {
+export class StudentsListingComponent implements OnInit, AfterViewInit {
 
   constructor(private studentService: StudentService,
               private router: Router,
@@ -45,17 +45,21 @@ export class StudentsListingComponent implements OnInit {
   }
 
   ngOnInit() {
+
+  }
+
+  ngAfterViewInit() {
     this.isResultsLoading = true;
     this.paginator
       .page
       .flatMap(data => {
-        return this.studentService.getStudents({page: ++data.pageIndex, perPage: data.pageSize});
+        return this.studentService.getStudents({page: data.pageIndex, perPage: data.pageSize});
       })
       .subscribe(data => {
-        this.dataSource = data['docs'];
-        this.resultsLength = data['total'];
-        this.isResultsLoading = false;
-      }, err => this.errorHandler(err, 'Failed to fetch students with pagination'),
+          this.dataSource = data['docs'];
+          this.resultsLength = data['total'];
+          this.isResultsLoading = false;
+        }, err => this.errorHandler(err, 'Failed to fetch students with pagination'),
         () => {
           this.isResultsLoading = false;
         });
