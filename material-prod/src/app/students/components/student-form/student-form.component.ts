@@ -30,10 +30,8 @@ export class StudentFormComponent implements OnInit {
         });
         this.studentForm.reset();
         this.router.navigate(['dashboard', 'students']);
-      }, err => {
-        console.log(err);
-        }
-      )
+      }, err => this.errorHandler(err, 'Failed to create student');
+      );
   }
 
   createForm() {
@@ -42,6 +40,13 @@ export class StudentFormComponent implements OnInit {
       technology: ['', Validators.required],
       experience: ['', Validators.required],
       phone: ['', Validators.required],
+    })
+  }
+
+  private errorHandler(error, message) {
+    console.error(error);
+    this.snackBar.open(message, 'Error', {
+      duration:2000
     })
   }
 

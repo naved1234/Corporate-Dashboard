@@ -16,5 +16,8 @@ export class StudentService {
   createStudent(body: Student): Observable<Student> {
     return this.httpClient.post<Student>(`${BASE_URL}/students`, body);
   }
+  deleteStudent(id: string): Observable<Student> {
+    return this.httpClient.delete<Student>(`${BASE_URL}/students/${id}`);
+  }
 
 }
