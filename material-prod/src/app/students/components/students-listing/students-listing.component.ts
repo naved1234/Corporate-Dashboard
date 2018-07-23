@@ -45,6 +45,7 @@ export class StudentsListingComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.isResultsLoading = true;
     this.paginator
       .page
       .flatMap(data => {
@@ -53,23 +54,29 @@ export class StudentsListingComponent implements OnInit {
       .subscribe(data => {
         this.dataSource = data['docs'];
         this.resultsLength = data['total'];
-      }, err => this.errorHandler(err, 'Failed to fetch students with pagination'));
+        this.isResultsLoading = false;
+      }, err => this.errorHandler(err, 'Failed to fetch students with pagination'),
+        () => {
+          this.isResultsLoading = false;
+        });
     this.populateStudents();
   }
 
   private populateStudents() {
+    this.isResultsLoading = true;
     this.studentService.getStudents({page: 1, perPage: 10}).subscribe(
       data => {
         this.dataSource = data['docs'];
         this.resultsLength = data['total'];
-      },
-      err => {
-        console.log(err);
-      }
-    );
+        this.isResultsLoading = false;
+      }, err => this.errorHandler(err, 'Failed to fetch students with pagination'),
+      () => {
+        this.isResultsLoading = false;
+      });
   }
 
   private errorHandler(error, message) {
+    this.isResultsLoading = false;
     console.error(error);
     this.snackBar.open(message, 'Error', {
       duration:2000
