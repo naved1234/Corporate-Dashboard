@@ -19,5 +19,7 @@ export class StudentService {
   deleteStudent(id: string): Observable<Student> {
     return this.httpClient.delete<Student>(`${BASE_URL}/students/${id}`);
   }
-
+  getStudent(id: string): Observable<Student> {
+    return this.httpClient.get<Student>(`${BASE_URL}/students/${id}`);
+  }
 }

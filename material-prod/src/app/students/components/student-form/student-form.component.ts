@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {StudentService} from "../../services/student.service";
 import {MatSnackBar} from "@angular/material";
-import {Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
+import {Student} from "../../models/student";
 
 @Component({
   selector: 'app-student-form',
@@ -11,15 +12,18 @@ import {Router} from "@angular/router";
 })
 export class StudentFormComponent implements OnInit {
 
+  private student: Student;
   studentForm: FormGroup;
 
   constructor(private fb: FormBuilder,
               private studentService: StudentService,
               public snackBar: MatSnackBar,
-              private router: Router) { }
+              private router: Router,
+              private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.createForm();
+    this.setStudentToForm();
   }
 
   onSubmit() {
@@ -33,7 +37,20 @@ export class StudentFormComponent implements OnInit {
       }, err => this.errorHandler(err, 'Failed to create student'));
   }
 
-  createForm() {
+  private setStudentToForm() {
+    this.route.params
+      .subscribe(params => {
+        let id = params['id'];
+        if (!id) return;
+        this.studentService.getStudent(id)
+          .subscribe(data => {
+            this.student = data;
+            this.studentForm.patchValue(this.student);
+          }, err => this.errorHandler(err, 'Failed to fetch student'));
+      });
+  }
+
+  private createForm() {
     this.studentForm = this.fb.group({
       name: ['', Validators.required],
       technology: ['', Validators.required],
