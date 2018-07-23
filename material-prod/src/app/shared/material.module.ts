@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import {
   MatButtonModule, MatCardModule, MatFormFieldModule, MatIconModule, MatInputModule, MatListModule, MatMenuModule,
   MatPaginatorModule, MatProgressSpinnerModule,
-  MatSidenavModule, MatSnackBarModule,
+  MatSidenavModule, MatSnackBarModule, MatSortModule,
   MatTableModule,
   MatToolbarModule
 } from "@angular/material";
@@ -21,7 +21,8 @@ const exportedMatModules = [
   MatInputModule,
   MatSnackBarModule,
   MatPaginatorModule,
-  MatProgressSpinnerModule
+  MatProgressSpinnerModule,
+  MatSortModule
 ]
 
 @NgModule({

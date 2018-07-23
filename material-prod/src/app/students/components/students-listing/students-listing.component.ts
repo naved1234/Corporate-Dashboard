@@ -2,7 +2,7 @@ import {Component, OnInit, ViewChild, AfterViewInit} from '@angular/core';
 import {StudentService} from "../../services/student.service";
 import {Student} from "../../models/student";
 import {Router} from "@angular/router";
-import {MatPaginator, MatSnackBar} from "@angular/material";
+import {MatPaginator, MatSnackBar, MatSort} from "@angular/material";
 import {remove} from "lodash";
 import 'rxjs/Rx';
 
@@ -22,6 +22,7 @@ export class StudentsListingComponent implements OnInit, AfterViewInit {
   isResultsLoading = false;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
 
   saveBtnHandler() {
     this.router.navigate(['dashboard', 'students', 'new']);
@@ -52,8 +53,23 @@ export class StudentsListingComponent implements OnInit, AfterViewInit {
     this.isResultsLoading = true;
     this.paginator
       .page
-      .flatMap(data => {
-        return this.studentService.getStudents({page: data.pageIndex, perPage: data.pageSize});
+      .flatMap(() => {
+        return this.studentService.getStudents({page: this.paginator.pageIndex, perPage: this.paginator.pageSize, sortField: this.sort.active, sortDir: this.sort.direction});
+      })
+      .subscribe(data => {
+          this.dataSource = data['docs'];
+          this.resultsLength = data['total'];
+          this.isResultsLoading = false;
+        }, err => this.errorHandler(err, 'Failed to fetch students with pagination'),
+        () => {
+          this.isResultsLoading = false;
+        });
+
+    this.sort
+      .sortChange
+      .flatMap(() => {
+        this.isResultsLoading = true;
+        return this.studentService.getStudents({page: this.paginator.pageIndex, perPage: this.paginator.pageSize, sortField: this.sort.active, sortDir: this.sort.direction});
       })
       .subscribe(data => {
           this.dataSource = data['docs'];
@@ -68,7 +84,7 @@ export class StudentsListingComponent implements OnInit, AfterViewInit {
 
   private populateStudents() {
     this.isResultsLoading = true;
-    this.studentService.getStudents({page: 1, perPage: 10}).subscribe(
+    this.studentService.getStudents({page: this.paginator.pageIndex, perPage: this.paginator.pageSize, sortField: this.sort.active, sortDir: this.sort.direction}).subscribe(
       data => {
         this.dataSource = data['docs'];
         this.resultsLength = data['total'];

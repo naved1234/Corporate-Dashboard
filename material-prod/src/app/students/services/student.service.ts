@@ -10,8 +10,13 @@ export class StudentService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getStudents({page, perPage}): Observable<StudentPaginationRsp[]> {
-    return this.httpClient.get<StudentPaginationRsp[]>(`${BASE_URL}/students?page=${page + 1}&perPage=${perPage}`);
+  getStudents({page, perPage, sortField, sortDir}): Observable<StudentPaginationRsp[]> {
+    let queryString = `${BASE_URL}/students?page=${page + 1}&perPage=${perPage}`;;
+    if (sortField && sortDir) {
+      console.log('inside');
+      queryString = `${BASE_URL}/students?page=${page + 1}&perPage=${perPage}&sortField=${sortField}&sortDir=${sortDir}`;
+    }
+    return this.httpClient.get<StudentPaginationRsp[]>(queryString);
   }
   createStudent(body: Student): Observable<Student> {
     return this.httpClient.post<Student>(`${BASE_URL}/students`, body);
