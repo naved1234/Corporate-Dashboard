@@ -35,6 +35,10 @@ export class StudentsListingComponent implements OnInit {
       }, err => this.errorHandler(err, 'Failed to fetch student'));
   }
 
+  editBtnHandler(id) {
+    this.router.navigate(['dashboard', 'students', id]);
+  }
+
   ngOnInit() {
     this.studentService.getStudents().subscribe(
       data => {

@@ -20,6 +20,10 @@ const routes: Routes = [
         component: StudentsListingComponent
       },
       {
+        path: 'students/:id',
+        component: StudentFormComponent
+      },
+      {
         path: 'students/new',
         component: StudentFormComponent
       }
