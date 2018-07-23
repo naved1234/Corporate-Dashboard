@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   MatButtonModule, MatCardModule, MatFormFieldModule, MatIconModule, MatInputModule, MatListModule, MatMenuModule,
-  MatPaginatorModule,
+  MatPaginatorModule, MatProgressSpinnerModule,
   MatSidenavModule, MatSnackBarModule,
   MatTableModule,
   MatToolbarModule
@@ -20,7 +20,8 @@ const exportedMatModules = [
   MatFormFieldModule,
   MatInputModule,
   MatSnackBarModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+  MatProgressSpinnerModule
 ]
 
 @NgModule({

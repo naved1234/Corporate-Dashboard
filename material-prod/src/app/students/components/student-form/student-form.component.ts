@@ -56,7 +56,7 @@ export class StudentFormComponent implements OnInit {
           .subscribe(data => {
             this.student = data;
             this.studentForm.patchValue(this.student);
-          }, err => this.errorHandler(err, 'Failed to fetch student'));
+          }, err => this.errorHandler(err, 'Failed to fetch the student'));
       });
   }
 

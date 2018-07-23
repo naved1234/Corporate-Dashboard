@@ -20,6 +20,7 @@ export class StudentsListingComponent implements OnInit {
   dataSource: Student[] = [];
   resultsLength = 0;
 
+
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   saveBtnHandler() {
@@ -50,6 +51,7 @@ export class StudentsListingComponent implements OnInit {
         return this.studentService.getStudents({page: ++data.pageIndex, perPage: data.pageSize});
       })
       .subscribe(data => {
+        console.log('hello1', data);
         this.dataSource = data.docs;
         this.resultsLength = data.total;
       }, err => this.errorHandler(err, 'Failed to fetch students with pagination'));
@@ -59,6 +61,7 @@ export class StudentsListingComponent implements OnInit {
   private populateStudents() {
     this.studentService.getStudents({page: 1, perPage: 10}).subscribe(
       data => {
+        console.log('hello2',data);
         this.dataSource = data.docs;
         this.resultsLength = data.total;
       },

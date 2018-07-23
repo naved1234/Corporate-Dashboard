@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/app/shared/material.module.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/shared/material.module.ts" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.ts" />
       <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,24 +22,9 @@
       <file leaf-file-name="student.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/models/student.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="162">
+              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="student.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-              <folding>
-                <marker date="1532367548971" expanded="true" signature="581:625" ph="..." />
-                <marker date="1532367548971" expanded="true" signature="708:754" ph="..." />
-                <marker date="1532367548971" expanded="true" signature="834:877" ph="..." />
-                <marker date="1532367548971" expanded="true" signature="975:1018" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -44,8 +32,8 @@
       <file leaf-file-name="students-listing.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="55" column="28" lean-forward="true" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+            <state relative-caret-position="1188">
+              <caret line="66" column="8" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -53,12 +41,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="students-listing.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html">
+      <file leaf-file-name="student.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="222">
+              <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,6 +62,8 @@
       <find>invoiceController</find>
       <find>table-co</find>
       <find>throw</find>
+      <find>Failed to fetc</find>
+      <find>New S</find>
     </findStrings>
     <replaceStrings>
       <replace>myHero</replace>
@@ -128,13 +120,13 @@
         <option value="$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.scss" />
         <option value="$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.html" />
         <option value="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard-routing.module.ts" />
-        <option value="$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.ts" />
         <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/models/student.model.js" />
         <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/controllers/student.controller.js" />
-        <option value="$PROJECT_DIR$/material-prod/src/app/students/models/student.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/shared/material.module.ts" />
-        <option value="$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts" />
+        <option value="$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html" />
+        <option value="$PROJECT_DIR$/material-prod/src/app/students/models/student.ts" />
+        <option value="$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" />
       </list>
     </option>
@@ -150,7 +142,7 @@
     <handled-path value="$PROJECT_DIR$/material-prod/node_modules" />
     <handled-path value="$PROJECT_DIR$/ng-bootcamp/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="78" />
     <option name="y" value="16" />
     <option name="width" value="1279" />
@@ -346,6 +338,14 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="students-listing.component.ts" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Corporate-Dashboard/material-prod/src/app/students/components/students-listing/students-listing.component.ts" />
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.students-listing.component.ts" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -363,15 +363,15 @@
       <workItem from="1532093322394" duration="27000" />
       <workItem from="1532094511913" duration="11652000" />
       <workItem from="1532111339913" duration="10000" />
-      <workItem from="1532111368337" duration="92726000" />
+      <workItem from="1532111368337" duration="98470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106449000" />
+    <option name="totallyTimeSpent" value="112193000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="78" y="16" width="1301" height="772" extended-state="6" />
+    <frame x="78" y="16" width="1301" height="772" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -385,7 +385,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -719,24 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="35" column="58" lean-forward="false" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -773,24 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/models/student.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/shared/material.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -799,31 +763,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts">
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/shared/material.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="297">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
-            <marker date="1532367548971" expanded="true" signature="581:625" ph="..." />
-            <marker date="1532367548971" expanded="true" signature="708:754" ph="..." />
-            <marker date="1532367548971" expanded="true" signature="834:877" ph="..." />
-            <marker date="1532367548971" expanded="true" signature="975:1018" ph="..." />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+        <state relative-caret-position="56">
+          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="56" column="32" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/models/student.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="55" column="28" lean-forward="true" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+        <state relative-caret-position="1188">
+          <caret line="66" column="8" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
