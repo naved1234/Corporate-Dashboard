@@ -27,14 +27,23 @@ export class StudentFormComponent implements OnInit {
   }
 
   onSubmit() {
-    this.studentService.createStudent(this.studentForm.value)
-      .subscribe(data => {
-        this.snackBar.open('Student created', 'Success', {
-          duration: 2000
-        });
-        this.studentForm.reset();
-        this.router.navigate(['dashboard', 'students']);
-      }, err => this.errorHandler(err, 'Failed to create student'));
+    if (this.student) {
+      this.studentService.updateStudent(this.student._id, this.studentForm.value)
+        .subscribe(data => {
+          this.snackBar.open('Student updated', 'Success', {
+            duration: 2000
+          });
+        }, err => this.errorHandler(err, 'Failed to update student'));
+    } else {
+      this.studentService.createStudent(this.studentForm.value)
+        .subscribe(data => {
+          this.snackBar.open('Student created', 'Success', {
+            duration: 2000
+          });
+          this.studentForm.reset();
+          this.router.navigate(['dashboard', 'students']);
+        }, err => this.errorHandler(err, 'Failed to create student'));
+    }
   }
 
   private setStudentToForm() {

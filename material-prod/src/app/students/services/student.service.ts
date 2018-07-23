@@ -22,4 +22,7 @@ export class StudentService {
   getStudent(id: string): Observable<Student> {
     return this.httpClient.get<Student>(`${BASE_URL}/students/${id}`);
   }
+  updateStudent(id: string, body: Student): Observable<Student> {
+    return this.httpClient.put<Student>(`${BASE_URL}/students/${id}`, body);
+  }
 }

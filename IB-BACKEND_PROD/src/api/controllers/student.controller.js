@@ -12,7 +12,7 @@ export default {
     const schema = Joi.object().keys({
       name: Joi.string().required(),
       technology: Joi.string().required(),
-      experience: Joi.string().optional(),
+      experience: Joi.number().optional(),
       phone: Joi.string().required(),
     });
     const { error, value } = Joi.validate(req.body, schema);
@@ -50,7 +50,7 @@ export default {
     const schema = Joi.object().keys({
       name: Joi.string().optional(),
       technology: Joi.string().optional(),
-      experience: Joi.string().optional(),
+      experience: Joi.number().optional(),
       phone: Joi.string().optional(),
     });
     const { error, value } = Joi.validate(req.body, schema);
