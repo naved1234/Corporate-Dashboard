@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {StudentService} from "../../services/student.service";
 import {Student} from "../../models/student";
 import {Router} from "@angular/router";
-import {MatSnackBar} from "@angular/material";
+import {MatPaginator, MatSnackBar} from "@angular/material";
 import {remove} from "lodash";
 
 @Component({
@@ -17,6 +17,9 @@ export class StudentsListingComponent implements OnInit {
               public snackBar: MatSnackBar) { }
   displayedColumns: string[] = ['name', 'technology', 'experience', 'phone', 'action'];
   dataSource: Student[] = [];
+  resultsLength = 0;
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
 
   saveBtnHandler() {
     this.router.navigate(['dashboard', 'students', 'new']);
@@ -40,9 +43,24 @@ export class StudentsListingComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.studentService.getStudents().subscribe(
+    this.paginator
+      .page
+      .subscribe(data => {
+        this.studentService.getStudents({page: ++data.pageIndex, perPage: data.pageSize})
+          .subscribe(data => {
+            console.log(data);
+            this.dataSource = data.docs;
+            this.resultsLength = data.total;
+          }, err => this.errorHandler(err, 'Failed to fetch students with pagination'));
+      }, err => this.errorHandler(err, 'Failed to fetch students with pagination'));
+    this.populateStudents();
+  }
+
+  private populateStudents() {
+    this.studentService.getStudents({page: 1, perPage: 10}).subscribe(
       data => {
-        this.dataSource = data;
+        this.dataSource = data.docs;
+        this.resultsLength = data.total;
       },
       err => {
         console.log(err);

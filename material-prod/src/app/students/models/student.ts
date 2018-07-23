@@ -5,3 +5,11 @@ export class Student {
   experience: number;
   phone: string;
 }
+
+export class StudentPaginationRsp {
+  docs: Student[];
+  total: number;
+  pages: number;
+  page: number;
+  limit: number;
+}

@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import mongoosePaginate from 'mongoose-paginate';
 
 const { Schema } = mongoose;
 
@@ -28,5 +29,5 @@ const StudentSchema = new Schema({
     default: Date.now()
   }
 });
-
+StudentSchema.plugin(mongoosePaginate);
 export default mongoose.model('Student', StudentSchema);
