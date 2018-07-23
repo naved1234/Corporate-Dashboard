@@ -4,12 +4,18 @@ import Student from '../models/student.model';
 
 export default {
   findAll(req, res, next) {
-    const {page = 1, perPage = 10} = req.query;
+    const {page = 1, perPage = 10, filter} = req.query;
     const options = {
       page: parseInt(page, 10),
       limit: parseInt(perPage, 10)
     };
-    Student.paginate({}, options)
+    const query = {};
+    if (filter) {
+      query.technology = {
+        $regex: filter,
+      };
+    }
+    Student.paginate(query, options)
       .then(students => res.json(students))
       .catch(err => res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(err));
   },
