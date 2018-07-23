@@ -30,8 +30,7 @@ export class StudentFormComponent implements OnInit {
         });
         this.studentForm.reset();
         this.router.navigate(['dashboard', 'students']);
-      }, err => this.errorHandler(err, 'Failed to create student');
-      );
+      }, err => this.errorHandler(err, 'Failed to create student'));
   }
 
   createForm() {

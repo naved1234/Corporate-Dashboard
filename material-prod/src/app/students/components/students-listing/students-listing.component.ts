@@ -3,6 +3,7 @@ import {StudentService} from "../../services/student.service";
 import {Student} from "../../models/student";
 import {Router} from "@angular/router";
 import {MatSnackBar} from "@angular/material";
+import {remove} from "lodash";
 
 @Component({
   selector: 'app-students-listing',
@@ -24,6 +25,10 @@ export class StudentsListingComponent implements OnInit {
   deleteBtnHandler(id) {
     this.studentService.deleteStudent(id)
       .subscribe(data => {
+        const removedItems = remove(this.dataSource, (item) => {
+          return item._id === data._id;
+        });
+        this.dataSource = [...this.dataSource];
         this.snackBar.open('Student deleted', 'Success', {
           duration: 2000
         })
