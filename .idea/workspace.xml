@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.html" afterPath="$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.html" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.scss" afterPath="$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.scss" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="17" column="60" lean-forward="true" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+              <caret line="17" column="99" lean-forward="false" selection-start-line="17" selection-start-column="99" selection-end-line="17" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -247,12 +245,12 @@
       <workItem from="1532093322394" duration="27000" />
       <workItem from="1532094511913" duration="11652000" />
       <workItem from="1532111339913" duration="10000" />
-      <workItem from="1532111368337" duration="75310000" />
+      <workItem from="1532111368337" duration="76245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89033000" />
+    <option name="totallyTimeSpent" value="89968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="16" width="1301" height="772" extended-state="6" />
@@ -704,7 +702,7 @@
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/student-form/student-form.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="17" column="60" lean-forward="true" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+          <caret line="17" column="99" lean-forward="false" selection-start-line="17" selection-start-column="99" selection-end-line="17" selection-end-column="99" />
           <folding />
         </state>
       </provider>

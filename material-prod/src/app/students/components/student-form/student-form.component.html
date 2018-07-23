@@ -3,15 +3,19 @@
   <form class="example-container" [formGroup]="studentForm" novalidate (ngSubmit)="onSubmit()">
     <mat-form-field color="accent">
       <input matInput placeholder="Name" formControlName="name" >
+      <mat-error *ngIf="studentForm.controls.name.invalid && studentForm.controls.name.touched">name is required</mat-error>
     </mat-form-field>
     <mat-form-field color="accent">
       <input matInput placeholder="Technology" formControlName="technology">
+      <mat-error *ngIf="studentForm.controls.technology.invalid && studentForm.controls.technology.touched">technology is required</mat-error>
     </mat-form-field>
     <mat-form-field color="accent">
       <input matInput placeholder="Experience" formControlName="experience">
+      <mat-error *ngIf="studentForm.controls.experience.invalid && studentForm.controls.experience.touched">experience is required</mat-error>
     </mat-form-field>
     <mat-form-field color="accent">
       <input matInput placeholder="Contact" formControlName="phone">
+      <mat-error *ngIf="studentForm.controls.phone.invalid && studentForm.controls.phone.touched">phone is required</mat-error>
     </mat-form-field>
     <div>
       <button mat-raised-button [disabled]="!studentForm.valid" type="submit" color="accent">Save</button>
