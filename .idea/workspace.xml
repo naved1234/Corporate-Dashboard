@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard-routing.module.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard-routing.module.ts" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard.module.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard.module.ts" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/todo/components/todo-listing/todo-listing.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/todo/components/todo-listing/todo-listing.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/todo/components/todo-listing/todo-listing.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/todo/todo.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,35 +17,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/app.js">
+      <file leaf-file-name="student.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard-routing.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard-routing.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="234">
+              <caret line="13" column="66" lean-forward="false" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.module.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard.module.ts">
+      <file leaf-file-name="students-listing.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="396">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,14 +104,14 @@
         <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/models/student.model.js" />
         <option value="$PROJECT_DIR$/material-prod/src/app/students/models/student.ts" />
         <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/app.js" />
-        <option value="$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts" />
-        <option value="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/shared/material.module.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html" />
         <option value="$PROJECT_DIR$/material-prod/src/app/students/students.module.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/dashboard/components/side-nav/side-nav.component.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard-routing.module.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard.module.ts" />
+        <option value="$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts" />
+        <option value="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" />
       </list>
     </option>
   </component>
@@ -187,33 +172,6 @@
               <item name="material-prod" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Corporate-Dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Corporate-Dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="material-prod" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Corporate-Dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Corporate-Dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="material-prod" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Corporate-Dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Corporate-Dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="material-prod" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="side-nav" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Corporate-Dashboard" type="b2602c69:ProjectViewProjectNode" />
@@ -308,12 +266,12 @@
       <workItem from="1532093322394" duration="27000" />
       <workItem from="1532094511913" duration="11652000" />
       <workItem from="1532111339913" duration="10000" />
-      <workItem from="1532111368337" duration="60375000" />
+      <workItem from="1532111368337" duration="61780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74098000" />
+    <option name="totallyTimeSpent" value="75503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="16" width="1301" height="772" extended-state="6" />
@@ -632,32 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/models/student.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/students.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/todo/todo.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -666,26 +598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -722,32 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/dashboard/components/side-nav/side-nav.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -770,6 +660,78 @@
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/dashboard/dashboard-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/models/student.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="66" lean-forward="false" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/students.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
