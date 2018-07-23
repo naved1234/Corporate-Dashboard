@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {StudentService} from "../../services/student.service";
+import {MatSnackBar} from "@angular/material";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-student-form',
@@ -12,7 +14,9 @@ export class StudentFormComponent implements OnInit {
   studentForm: FormGroup;
 
   constructor(private fb: FormBuilder,
-              private studentService: StudentService) { }
+              private studentService: StudentService,
+              public snackBar: MatSnackBar,
+              private router: Router) { }
 
   ngOnInit() {
     this.createForm();
@@ -21,7 +25,11 @@ export class StudentFormComponent implements OnInit {
   onSubmit() {
     this.studentService.createStudent(this.studentForm.value)
       .subscribe(data => {
+        this.snackBar.open('Student created', 'Success', {
+          duration: 2000
+        });
         this.studentForm.reset();
+        this.router.navigate(['dashboard', 'students']);
       }, err => {
         console.log(err);
         }
