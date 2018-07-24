@@ -22,7 +22,7 @@ const exportedMatModules = [
   MatSnackBarModule,
   MatPaginatorModule,
   MatProgressSpinnerModule,
-  MatSortModule
+  MatSortModule,
 ]
 
 @NgModule({

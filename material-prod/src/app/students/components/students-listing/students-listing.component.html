@@ -1,5 +1,7 @@
 <mat-toolbar>
-  <h3>Students</h3>
+  <mat-form-field color="accent">
+    <input matInput (keyup)="filterText($event.target.value)" placeholder="Search"/>
+  </mat-form-field>
   <div class="menu-bar">
     <button mat-button (click)="saveBtnHandler()">
       New Student

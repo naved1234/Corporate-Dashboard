@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/app/shared/material.module.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/shared/material.module.ts" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html" afterPath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html" />
       <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" />
+      <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +23,8 @@
       <file leaf-file-name="material.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/material-prod/src/app/shared/material.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+            <state relative-caret-position="432">
+              <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -31,8 +35,8 @@
       <file leaf-file-name="students-listing.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="36">
+              <caret line="2" column="59" lean-forward="false" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -41,8 +45,8 @@
       <file leaf-file-name="students-listing.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+            <state relative-caret-position="108">
+              <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
               </folding>
@@ -53,10 +57,10 @@
       <file leaf-file-name="student.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="288">
+              <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
               <folding>
-                <marker date="1532385630480" expanded="true" signature="830:874" ph="..." />
+                <marker date="1532414511820" expanded="true" signature="917:961" ph="..." />
               </folding>
             </state>
           </provider>
@@ -359,7 +363,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121382000" />
+    <option name="totallyTimeSpent" value="124808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="16" width="1301" height="772" extended-state="6" />
@@ -714,38 +718,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <folding>
+            <marker date="1532414511820" expanded="true" signature="917:961" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/shared/material.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        <state relative-caret-position="432">
+          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/services/student.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <marker date="1532385630480" expanded="true" signature="830:874" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="36">
+          <caret line="2" column="59" lean-forward="false" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+        <state relative-caret-position="108">
+          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
           <folding>
             <element signature="e#0#74#0" expanded="true" />
           </folding>

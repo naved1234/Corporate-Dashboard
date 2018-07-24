@@ -6,6 +6,7 @@ import {MatPaginator, MatSnackBar, MatSort} from "@angular/material";
 import {remove} from "lodash";
 import 'rxjs/Rx';
 
+
 @Component({
   selector: 'app-students-listing',
   templateUrl: './students-listing.component.html',
@@ -49,12 +50,27 @@ export class StudentsListingComponent implements OnInit, AfterViewInit {
 
   }
 
+  filterText(filterValue: string) {
+    this.isResultsLoading = true;
+    filterValue = filterValue.trim();
+    this.paginator.pageIndex = 0;
+    return this.studentService.getStudents({page: this.paginator.pageIndex, perPage: this.paginator.pageSize, sortField: this.sort.active, sortDir: this.sort.direction, filter: filterValue})
+      .subscribe(data => {
+          this.dataSource = data['docs'];
+          this.resultsLength = data['total'];
+          this.isResultsLoading = false;
+        }, err => this.errorHandler(err, 'Failed to fetch students'),
+        () => {
+          this.isResultsLoading = false;
+        });
+  }
+
   ngAfterViewInit() {
     this.isResultsLoading = true;
     this.paginator
       .page
       .flatMap(() => {
-        return this.studentService.getStudents({page: this.paginator.pageIndex, perPage: this.paginator.pageSize, sortField: this.sort.active, sortDir: this.sort.direction});
+        return this.studentService.getStudents({page: this.paginator.pageIndex, perPage: this.paginator.pageSize, sortField: this.sort.active, sortDir: this.sort.direction, filter: ''});
       })
       .subscribe(data => {
           this.dataSource = data['docs'];
@@ -70,7 +86,7 @@ export class StudentsListingComponent implements OnInit, AfterViewInit {
       .flatMap(() => {
         this.isResultsLoading = true;
         this.paginator.pageIndex = 0;
-        return this.studentService.getStudents({page: this.paginator.pageIndex, perPage: this.paginator.pageSize, sortField: this.sort.active, sortDir: this.sort.direction});
+        return this.studentService.getStudents({page: this.paginator.pageIndex, perPage: this.paginator.pageSize, sortField: this.sort.active, sortDir: this.sort.direction, filter: ''});
       })
       .subscribe(data => {
           this.dataSource = data['docs'];
