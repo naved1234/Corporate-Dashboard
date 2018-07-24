@@ -1,5 +1,5 @@
 <mat-card>
-  <h3>Create Student</h3>
+  <h3>{{title}}</h3>
   <form class="example-container" [formGroup]="studentForm" novalidate (ngSubmit)="onSubmit()">
     <mat-form-field color="accent">
       <input matInput placeholder="Name" formControlName="name" >

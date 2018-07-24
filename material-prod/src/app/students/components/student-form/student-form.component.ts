@@ -14,6 +14,7 @@ export class StudentFormComponent implements OnInit {
 
   private student: Student;
   studentForm: FormGroup;
+  title = 'New Student';
 
   constructor(private fb: FormBuilder,
               private studentService: StudentService,
@@ -52,6 +53,7 @@ export class StudentFormComponent implements OnInit {
       .subscribe(params => {
         let id = params['id'];
         if (id == 'new') return;
+        this.title = 'Edit Student';
         this.studentService.getStudent(id)
           .subscribe(data => {
             this.student = data;
