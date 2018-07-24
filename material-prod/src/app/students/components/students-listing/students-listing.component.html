@@ -8,7 +8,11 @@
     </button>
   </div>
 </mat-toolbar>
-<mat-spinner color="accent" *ngIf="isResultsLoading"></mat-spinner>
+<div *ngIf="isResultsLoading" class="mat-elevation-z8">
+  <div class="loading-shade">
+    <mat-spinner color="accent"></mat-spinner>
+  </div>
+</div>
 <mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort="">
   <!-- Position Column -->
   <ng-container matColumnDef="name">

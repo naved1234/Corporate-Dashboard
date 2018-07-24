@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {LoginRsp, User} from "../models/user";
+import {LoginRsp, SignupRsp, User} from "../models/user";
 import {Observable} from "rxjs/Observable";
 import {environment} from "../../../environments/environment";
 import {HttpClient} from "@angular/common/http";
@@ -13,4 +13,7 @@ export class AuthService {
     return this.httpClient.post<LoginRsp>(`${environment.api_url}/login`, body);
   }
 
+  signup(body: User): Observable<SignupRsp>{
+    return this.httpClient.post<SignupRsp>(`${environment.api_url}/signup`, body);
+  }
 }
