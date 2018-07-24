@@ -8,6 +8,8 @@ import {MaterialModule} from "../shared/material.module";
 import {DashboardRoutingModule} from "./dashboard-routing.module";
 import {DashboardComponent} from "./dashboard.component";
 import {StudentsModule} from "../students/students.module";
+import {HTTP_INTERCEPTORS} from "@angular/common/http";
+import {TokenInterceptorService} from "../core/services/token-interceptor.service";
 
 
 @NgModule({
@@ -17,6 +19,9 @@ import {StudentsModule} from "../students/students.module";
     MaterialModule,
     StudentsModule
   ],
-  declarations: [DashboardComponent, MainContentComponent, SideNavComponent, ToolbarComponent]
+  declarations: [DashboardComponent, MainContentComponent, SideNavComponent, ToolbarComponent],
+  providers: [{
+    provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true
+  }]
 })
 export class DashboardModule { }
