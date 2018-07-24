@@ -2,9 +2,11 @@ import express from 'express';
 import mongoose from 'mongoose';
 import logger from 'morgan';
 import cors from 'cors';
+import passport from 'passport';
 
 import { router } from './config/routes';
 import { userRouter} from "./api/resources/user/user.router";
+import pass from './api/middlewares/passport-jwt';
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/studentBuilder', { useNewUrlParser: true },
@@ -16,6 +18,8 @@ const PORT = 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
+app.use(passport.initialize());
+pass();
 app.use(logger('dev'));
 app.use('/api', router);
 app.use('/api/users', userRouter);

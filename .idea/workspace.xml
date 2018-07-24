@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dced4ce-42a6-46a3-bbdf-8c6fca6940b7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.controller.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.model.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.router.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.service.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/middlewares/passport-jwt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/IB-BACKEND_PROD/src/config/env/development.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/IB-BACKEND_PROD/package-lock.json" afterPath="$PROJECT_DIR$/IB-BACKEND_PROD/package-lock.json" />
       <change beforePath="$PROJECT_DIR$/IB-BACKEND_PROD/package.json" afterPath="$PROJECT_DIR$/IB-BACKEND_PROD/package.json" />
+      <change beforePath="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.controller.js" afterPath="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.controller.js" />
+      <change beforePath="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.router.js" afterPath="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.router.js" />
       <change beforePath="$PROJECT_DIR$/IB-BACKEND_PROD/src/app.js" afterPath="$PROJECT_DIR$/IB-BACKEND_PROD/src/app.js" />
-      <change beforePath="$PROJECT_DIR$/IB-BACKEND_PROD/src/config/routes.js" afterPath="$PROJECT_DIR$/IB-BACKEND_PROD/src/config/routes.js" />
-      <change beforePath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" afterPath="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,10 +26,22 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="378">
+              <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="passport-jwt.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/api/middlewares/passport-jwt.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,8 +50,8 @@
       <file leaf-file-name="user.router.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+            <state relative-caret-position="126">
+              <caret line="7" column="94" lean-forward="true" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -52,8 +62,8 @@
       <file leaf-file-name="user.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="75" />
+            <state relative-caret-position="308">
+              <caret line="35" column="66" lean-forward="true" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -61,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="students-listing.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts">
+      <file leaf-file-name="development.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/config/env/development.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="103" column="172" lean-forward="false" selection-start-line="103" selection-start-column="172" selection-end-line="103" selection-end-column="172" />
+            <state relative-caret-position="108">
+              <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -77,18 +87,6 @@
             <state relative-caret-position="54">
               <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.model.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -121,8 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/material-prod/package.json" />
-        <option value="$PROJECT_DIR$/material-prod/src/main.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/index.html" />
         <option value="$PROJECT_DIR$/material-prod/src/app/student-table-builder/student-table-builder-routing.module.ts" />
         <option value="$PROJECT_DIR$/material-prod/src/app/app.component.html" />
@@ -165,13 +161,15 @@
         <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/models/user.model.js" />
         <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/controllers/user.controller.js" />
         <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/config/routes.js" />
-        <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.router.js" />
         <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/index.js" />
-        <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/app.js" />
         <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.service.js" />
         <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.model.js" />
-        <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.controller.js" />
         <option value="$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts" />
+        <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/config/env/development.js" />
+        <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.router.js" />
+        <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/app.js" />
+        <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.controller.js" />
+        <option value="$PROJECT_DIR$/IB-BACKEND_PROD/src/api/middlewares/passport-jwt.js" />
       </list>
     </option>
   </component>
@@ -186,7 +184,7 @@
     <handled-path value="$PROJECT_DIR$/material-prod/node_modules" />
     <handled-path value="$PROJECT_DIR$/ng-bootcamp/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="78" />
     <option name="y" value="16" />
     <option name="width" value="1279" />
@@ -272,6 +270,14 @@
               <item name="IB-BACKEND_PROD" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Corporate-Dashboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Corporate-Dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="IB-BACKEND_PROD" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="env" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Corporate-Dashboard" type="b2602c69:ProjectViewProjectNode" />
@@ -446,10 +452,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132996000" />
+    <option name="totallyTimeSpent" value="139116000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="78" y="16" width="1301" height="772" extended-state="7" />
+    <frame x="78" y="16" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -495,15 +501,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/material-prod/src/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/todo-list-listing/todo-list-listing.component.scss" />
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/todo-list-listing/todo-list-listing.component.ts" />
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/todo-list-listing/todo-list-listing.component.html" />
     <entry file="file://$PROJECT_DIR$/material-prod/src/app/dashboard/components/side-nav/side-nav.component.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -781,14 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/config/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -799,10 +788,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="103" column="172" lean-forward="false" selection-start-line="103" selection-start-column="172" selection-end-line="103" selection-end-column="172" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/config/env/development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="824" column="0" lean-forward="true" selection-start-line="824" selection-start-column="0" selection-end-line="824" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="35" column="66" lean-forward="true" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        <state relative-caret-position="126">
+          <caret line="7" column="94" lean-forward="true" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -811,39 +850,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="378">
+          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/api/resources/user/user.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/material-prod/src/app/students/components/students-listing/students-listing.component.ts">
+    <entry file="file://$PROJECT_DIR$/IB-BACKEND_PROD/src/api/middlewares/passport-jwt.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="103" column="172" lean-forward="false" selection-start-line="103" selection-start-column="172" selection-end-line="103" selection-end-column="172" />
-          <folding />
+          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
