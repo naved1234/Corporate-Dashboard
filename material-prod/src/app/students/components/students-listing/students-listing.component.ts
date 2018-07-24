@@ -38,7 +38,7 @@ export class StudentsListingComponent implements OnInit, AfterViewInit {
         this.dataSource = [...this.dataSource];
         this.snackBar.open('Student deleted', 'Success', {
           duration: 2000
-        })
+        });
       }, err => this.errorHandler(err, 'Failed to fetch student'));
   }
 

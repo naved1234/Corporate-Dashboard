@@ -4,28 +4,34 @@ import {MainContentComponent} from "./components/main-content/main-content.compo
 import {DashboardComponent} from "./dashboard.component";
 import {StudentsListingComponent} from "../students/components/students-listing/students-listing.component";
 import {StudentFormComponent} from "../students/components/student-form/student-form.component";
+import {AuthGuardService} from "../core/services/auth-guard.service";
 
 
 const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
+    canActivate: [AuthGuardService],
     children: [
       {
         path: '',
-        component: MainContentComponent
+        component: MainContentComponent,
+        canActivateChild: [AuthGuardService]
       },
       {
         path: 'students',
-        component: StudentsListingComponent
+        component: StudentsListingComponent,
+        canActivateChild: [AuthGuardService]
       },
       {
         path: 'students/:id',
-        component: StudentFormComponent
+        component: StudentFormComponent,
+        canActivateChild: [AuthGuardService]
       },
       {
         path: 'students/new',
-        component: StudentFormComponent
+        component: StudentFormComponent,
+        canActivateChild: [AuthGuardService]
       }
     ]
   }

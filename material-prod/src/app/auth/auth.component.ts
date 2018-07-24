@@ -32,7 +32,10 @@ export class AuthComponent implements OnInit {
       this.authService.signup(this.authForm.value)
         .subscribe(data => {
           console.log(data);
-          this.router.navigate(['/dashboard']);
+            this.snackBar.open('You can Login', 'Success', {
+              duration: 2000
+            });
+          this.router.navigate(['/login']);
         }, err => this.errorHandler(err, 'Failed to Signup'),
           () => this.isResultsLoading = false);
     } else {
