@@ -101,7 +101,7 @@ export class StudentsListingComponent implements OnInit, AfterViewInit {
 
   private populateStudents() {
     this.isResultsLoading = true;
-    this.studentService.getStudents({page: this.paginator.pageIndex, perPage: this.paginator.pageSize, sortField: this.sort.active, sortDir: this.sort.direction}).subscribe(
+    this.studentService.getStudents({page: this.paginator.pageIndex, perPage: this.paginator.pageSize, sortField: this.sort.active, sortDir: this.sort.direction, filter: ''}).subscribe(
       data => {
         this.dataSource = data['docs'];
         this.resultsLength = data['total'];

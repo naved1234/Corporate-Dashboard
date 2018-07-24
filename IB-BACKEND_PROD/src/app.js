@@ -4,6 +4,7 @@ import logger from 'morgan';
 import cors from 'cors';
 
 import { router } from './config/routes';
+import { userRouter} from "./api/resources/user/user.router";
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/studentBuilder', { useNewUrlParser: true },
@@ -17,6 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(logger('dev'));
 app.use('/api', router);
+app.use('/api/users', userRouter);
 
 app.use((req, res, next) => {
   const error = new Error('Not found');
