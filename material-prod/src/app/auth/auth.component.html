@@ -9,7 +9,7 @@
             <mat-error *ngIf="authForm.controls.email.invalid && authForm.controls.email.touched">email is required</mat-error>
           </mat-form-field>
           <mat-form-field color="accent">
-            <input matInput placeholder="Password" formControlName="password">
+            <input matInput placeholder="Password" formControlName="password" type="password">
             <mat-error *ngIf="authForm.controls.password.invalid && authForm.controls.password.touched">password is required</mat-error>
           </mat-form-field>
           <div>
