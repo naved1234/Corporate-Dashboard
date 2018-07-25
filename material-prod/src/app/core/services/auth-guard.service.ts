@@ -14,9 +14,6 @@ export class AuthGuardService implements CanActivate, CanActivateChild{
     if (this.jwtService.getToken()) {
       return true;
     } else {
-      this.snackBar.open('Login First', 'Error', {
-        duration: 2000
-      });
       this.router.navigate(['/login']);
       return false;
     }
