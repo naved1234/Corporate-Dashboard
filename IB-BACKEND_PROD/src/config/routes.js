@@ -9,4 +9,4 @@ router.get('/students', passport.authenticate('jwt', {session: false}), studentC
 router.get('/students/:id', passport.authenticate('jwt', {session: false}), studentController.findOne);
 router.delete('/students/:id', passport.authenticate('jwt', {session: false}), studentController.delete);
 router.put('/students/:id', passport.authenticate('jwt', {session: false}), studentController.update);
-router.post('/students', passport.authenticate('jwt', {session: false}), studentController.create);
+router.post('/students/new', passport.authenticate('jwt', {session: false}), studentController.create);

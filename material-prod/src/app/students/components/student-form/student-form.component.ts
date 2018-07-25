@@ -52,7 +52,7 @@ export class StudentFormComponent implements OnInit {
     this.route.params
       .subscribe(params => {
         let id = params['id'];
-        if (id == 'new') return;
+        if (id) return;
         this.title = 'Edit Student';
         this.route.data.subscribe((data: {student: Student}) => {
           this.student = data.student;
