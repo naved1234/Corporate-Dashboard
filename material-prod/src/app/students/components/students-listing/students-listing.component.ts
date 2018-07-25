@@ -17,7 +17,7 @@ export class StudentsListingComponent implements OnInit, AfterViewInit {
   constructor(private studentService: StudentService,
               private router: Router,
               public snackBar: MatSnackBar) { }
-  displayedColumns: string[] = ['name', 'technology', 'experience', 'phone', 'action'];
+  displayedColumns: string[] = ['name', 'technology', 'experience', 'action'];
   dataSource: Student[] = [];
   resultsLength = 0;
   isResultsLoading = false;

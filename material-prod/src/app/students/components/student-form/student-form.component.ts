@@ -54,11 +54,10 @@ export class StudentFormComponent implements OnInit {
         let id = params['id'];
         if (id == 'new') return;
         this.title = 'Edit Student';
-        this.studentService.getStudent(id)
-          .subscribe(data => {
-            this.student = data;
-            this.studentForm.patchValue(this.student);
-          }, err => this.errorHandler(err, 'Failed to fetch the student'));
+        this.route.data.subscribe((data: {student: Student}) => {
+          this.student = data.student;
+          this.studentForm.patchValue(this.student);
+        });
       });
   }
 

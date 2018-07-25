@@ -32,12 +32,6 @@
     <mat-cell *matCellDef="let student"> {{student.experience}} </mat-cell>
   </ng-container>
 
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="phone">
-    <mat-header-cell *matHeaderCellDef mat-sort-header> Contact </mat-header-cell>
-    <mat-cell *matCellDef="let student"> {{student.phone}} </mat-cell>
-  </ng-container>
-
   <ng-container matColumnDef="action">
     <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
     <mat-cell *matCellDef="let student">
@@ -48,6 +42,10 @@
       <button mat-menu-item (click)="editBtnHandler(student._id)">
         <mat-icon>edit</mat-icon>
         <span>Edit</span>
+      </button>
+      <button mat-menu-item [routerLink] = "[student._id, 'view']">
+        <mat-icon>pageview</mat-icon>
+        <span>View</span>
       </button>
       <button mat-menu-item (click)="deleteBtnHandler(student._id)">
         <mat-icon>delete</mat-icon>

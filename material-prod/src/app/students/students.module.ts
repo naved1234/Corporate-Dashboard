@@ -6,6 +6,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {StudentService} from "./services/student.service";
 import { StudentFormComponent } from './components/student-form/student-form.component';
+import { StudentViewComponent } from './components/student-view/student-view.component';
+import {RouterModule} from "@angular/router";
+import {EditStudentResolverService} from "./services/edit-student-resolver.service";
 
 @NgModule({
   imports: [
@@ -13,10 +16,11 @@ import { StudentFormComponent } from './components/student-form/student-form.com
     MaterialModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ],
-  declarations: [StudentsListingComponent, StudentFormComponent],
+  declarations: [StudentsListingComponent, StudentFormComponent, StudentViewComponent],
   exports: [StudentsListingComponent, StudentFormComponent],
-  providers: [StudentService]
+  providers: [StudentService, EditStudentResolverService]
 })
 export class StudentsModule { }

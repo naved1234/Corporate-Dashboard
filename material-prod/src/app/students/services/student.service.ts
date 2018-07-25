@@ -13,7 +13,6 @@ export class StudentService {
   getStudents({page, perPage, sortField, sortDir, filter}): Observable<StudentPaginationRsp[]> {
     let queryString = `${BASE_URL}/students?page=${page + 1}&perPage=${perPage}`;;
     if (sortField && sortDir) {
-      console.log('inside');
       queryString = `${BASE_URL}/students?page=${page + 1}&perPage=${perPage}&sortField=${sortField}&sortDir=${sortDir}`;
     }
     if (filter) {

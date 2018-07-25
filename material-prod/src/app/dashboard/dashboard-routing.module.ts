@@ -5,6 +5,8 @@ import {DashboardComponent} from "./dashboard.component";
 import {StudentsListingComponent} from "../students/components/students-listing/students-listing.component";
 import {StudentFormComponent} from "../students/components/student-form/student-form.component";
 import {AuthGuardService} from "../core/services/auth-guard.service";
+import {StudentViewComponent} from "../students/components/student-view/student-view.component";
+import {EditStudentResolverService} from "../students/services/edit-student-resolver.service";
 
 
 const routes: Routes = [
@@ -26,12 +28,23 @@ const routes: Routes = [
       {
         path: 'students/:id',
         component: StudentFormComponent,
-        canActivateChild: [AuthGuardService]
+        canActivateChild: [AuthGuardService],
+        resolve: {
+          student: EditStudentResolverService
+        }
       },
       {
         path: 'students/new',
         component: StudentFormComponent,
         canActivateChild: [AuthGuardService]
+      },
+      {
+        path: 'students/:id/view',
+        component: StudentViewComponent,
+        canActivateChild: [AuthGuardService],
+        resolve: {
+          student: EditStudentResolverService
+        }
       }
     ]
   }
